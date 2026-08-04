@@ -102,28 +102,6 @@ Some expected insights include:
 ---
 
 
-## ▶️ Getting Started
-
-Clone the repository
-
-```bash
-git clone https://github.com/Masuha20/Customer-Churn-Prediction.git
-```
-
-Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-Launch Jupyter Notebook
-
-```bash
-jupyter notebook
-```
-
----
-
 ## 👨‍💻 Authors
 
 This project was developed by:
