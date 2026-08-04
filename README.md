@@ -22,26 +22,6 @@ This project analyzes customer data to identify the factors that contribute to c
 
 ---
 
-## 📂 Repository Structure
-
-```
-Customer-Churn-Prediction/
-│
-├── data/
-│   └── Churn_Modelling.csv
-│
-├── notebooks/
-│   └── Customer_Churn_Analysis.ipynb
-│
-├── images/
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
-
----
-
 ## 📊 Dataset
 
 The dataset contains customer information such as:
