@@ -152,5 +152,3 @@ This project was developed by:
 - Prerna Suman
 - Shivli Soni
 ---
-
-## ⭐ If you found this project helpful, consider giving it a star!
