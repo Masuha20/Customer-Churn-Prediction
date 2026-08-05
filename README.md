@@ -124,7 +124,7 @@ Possible improvements include:
 
 ---
 
-## Author
+## Authors
 
 **Rutwik Pabitwar**
 **Prerna Suman**
