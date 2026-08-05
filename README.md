@@ -1,30 +1,16 @@
-# 🏦 Customer Churn Prediction
+# Customer Churn Prediction using Machine Learning
 
-Predicting whether a bank customer is likely to leave the bank using Machine Learning and Exploratory Data Analysis (EDA).
+## Overview
 
----
+Customer churn prediction is an important task for banks and businesses seeking to improve customer retention. This project develops and compares multiple machine learning models to predict whether a customer is likely to leave the bank based on demographic and account-related information.
 
-## 📌 Project Overview
-
-Customer churn is one of the biggest challenges faced by banks and subscription-based businesses. Retaining an existing customer is often more cost-effective than acquiring a new one.
-
-This project analyzes customer data to identify the factors that contribute to churn and lays the foundation for building predictive machine learning models.
+The project also incorporates hyperparameter tuning and evaluates each model using multiple performance metrics to identify the most effective approach.
 
 ---
 
-## 🎯 Objectives
+## Dataset
 
-- Perform comprehensive Exploratory Data Analysis (EDA)
-- Clean and preprocess the dataset
-- Understand the relationship between customer attributes and churn
-- Identify the most influential features
-- Build machine learning models for churn prediction (upcoming)
-
----
-
-## 📊 Dataset
-
-The dataset contains customer information such as:
+The dataset contains customer information including:
 
 - Credit Score
 - Geography
@@ -33,80 +19,113 @@ The dataset contains customer information such as:
 - Tenure
 - Balance
 - Number of Products
-- Credit Card Status
-- Active Member Status
+- Has Credit Card
+- Is Active Member
 - Estimated Salary
-- Churn Status (Target Variable)
+
+**Target Variable**
+
+- **Exited = 1** → Customer Churned
+- **Exited = 0** → Customer Retained
 
 ---
 
-## 🛠 Technologies Used
+## Machine Learning Models
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- Jupyter Notebook
-
----
-
-## 📈 Exploratory Data Analysis
-
-The notebook currently includes:
-
-- Data Loading
-- Data Cleaning
-- Missing Value Analysis
-- Duplicate Value Check
-- Feature Exploration
-- Statistical Summary
-- Data Visualization
-- Correlation Analysis
-- Customer Churn Insights
-
----
-
-## 🤖 Machine Learning
-
-The following models will be implemented:
+The following classification algorithms were implemented and compared:
 
 - Logistic Regression
-- Decision Tree
-- Random Forest
-- XGBoost *(optional)*
+- Decision Tree Classifier
+- Random Forest Classifier
+- XGBoost Classifier
 
-Model performance will be evaluated using:
+---
+
+## Hyperparameter Tuning
+
+To improve predictive performance, hyperparameter optimization was performed using **RandomizedSearchCV** for:
+
+- Random Forest
+- XGBoost
+
+The tuned models were then evaluated and compared with the baseline models.
+
+---
+
+## Evaluation Metrics
+
+Model performance was evaluated using:
 
 - Accuracy
 - Precision
 - Recall
 - F1 Score
-- ROC-AUC Score
+- Confusion Matrix
+- ROC Curve
+- Area Under the Curve (AUC)
 
 ---
 
-## 📌 Key Insights
+## Visualizations
 
-This section will be updated after completing the analysis.
+The project includes the following visualizations:
 
-Some expected insights include:
+### Model Accuracy Comparison
 
-- Age vs Churn
-- Geography vs Churn
-- Balance vs Churn
-- Active Members vs Churn
-- Number of Products vs Churn
+![Accuracy](images/model_accuracy_comparison.png)
+
+### Model F1 Score Comparison
+
+![F1 Score](images/model_f1score_comparison.png)
+
+### ROC Curve Comparison
+
+![ROC Curve](images/roc_curve_comparison.png)
 
 ---
 
+## Technologies Used
 
-## 👨‍💻 Authors
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+- XGBoost
+- Jupyter Notebook
 
-This project was developed by:
-
-- Rutwik Pabitwar
-- Prerna Suman
-- Shivli Soni
 ---
+
+## Results
+
+The implemented machine learning models were evaluated using multiple performance metrics.
+
+Among the evaluated models:
+
+- Logistic Regression served as the baseline classifier.
+- Decision Tree provided an interpretable tree-based model.
+- Random Forest improved predictive performance using an ensemble learning approach.
+- XGBoost utilized gradient boosting with hyperparameter optimization for enhanced classification.
+
+Hyperparameter tuning further improved the performance of Random Forest and XGBoost, leading to more reliable customer churn predictions.
+
+---
+
+## Future Enhancements
+
+Possible improvements include:
+
+- Feature Engineering
+- Handling class imbalance using SMOTE
+- K-Fold Cross Validation
+- Decision Threshold Optimization
+- Feature Importance Analysis
+- Model Deployment using Flask or Streamlit
+
+---
+
+## Author
+
+**Rutwik Pabitwar**
+**Prerna Suman**
+**Shivli Soni**
